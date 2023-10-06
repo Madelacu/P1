@@ -13,3 +13,13 @@
     font-family: 'Georgia';
     font-size: 21px;
 }
+
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    letter-spacing: 15px;
+}
+h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
