@@ -15,5 +15,32 @@
 
   <body>
 
+        <div class="text-center">
+            <div class="row">
+                <div class="col">
+                    <img src="luca.jpg" class = "fondo" >
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <br><br><br>
+                    <h1 class="titulo">Renacimiento</h1>
+                    <br>
+                    <p class ="fecha">Del 1400 al 1480 </p>
+                    <br>
+                    <p class ="texto">
+                        El Renacimiento fue un movimiento cultural y artístico que se produjo en Europa 
+                        Occidental durante los siglos XV y XVI. Fue un período de transición entre la 
+                        Edad Media y los inicios de la Edad Moderna, y se caracterizó por un cambio en
+                        la mentalidad europea, que pasó de ser teocéntrica a antropocéntrica
+                    </p>
+                    <br><br><br><br>
+                </div>
+            </div>
+        </div>
+        
   </body>
 </html>
