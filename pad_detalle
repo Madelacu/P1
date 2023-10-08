@@ -41,6 +41,40 @@
                 </div>
             </div>
         </div>
-        
-  </body>
+
+<!--FIn de Grid de 3x3-->
+
+        <div>
+            <div class="row">
+                <div class="col-md">
+                    <img src="uno.png" class = "galeria" >
+                    <p class ="texto"><br>Título: Bacchus and Ariadne</p>
+                    <p class ="texto">Creador: Titian</p>
+                    <p class ="texto">Fecha de creación: 1520/1523</p>
+                    <p class ="texto">Dimensiones físicas: 176.5 x 191 cm</p>
+                    <p class ="texto">Tipo: Painting</p>
+                    <p class ="texto">School: Italian (Venetian)</p>
+                </div>
+
+                <div class="col-md">
+                    <img src="dos.png" class = "galeria" >
+                    <p class ="texto"><br>Título: The Interrupted Sleep</p>
+                    <p class ="texto">Creador: François Boucher</p>
+                    <p class ="texto">Fecha de creación: 1750</p>
+                    <p class ="texto">Dimensiones físicas: 81.9 x 75.2 cm</p>
+                    <p class ="texto">Tipo: Painting</p>
+                    <p class ="texto">Repository: Metropolitan Museum of Art, New York, NY</p>
+                </div>
+
+                <div class="col-md">
+                    <img src="tres.png" class = "galeria" >
+                    <p class ="texto"><br>Título: The Feast of the Gods</p>
+                    <p class ="texto">Creador: Giovanni Bellini and Titian</p>
+                    <p class ="texto">Fecha de creación: 1514/1529</p>
+                    <p class ="texto">Dimensiones físicas: 170.2 x 188 cm</p>
+                    <p class ="texto">Tipo: Painting</p>
+                    <p class ="texto">Técnica: oil on canvas</p>
+                </div>
+            </div>
+        </div>
 </html>
