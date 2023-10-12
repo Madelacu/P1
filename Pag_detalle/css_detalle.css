@@ -24,10 +24,22 @@ body {
     text-align:center;
 }
 
+.titulo2 {
+    font-family: CB;
+    font-size:30px;
+    text-align:center;
+}
+
 .fecha{
     font-family: CR;
     font-size:22px;
     text-align:center;
+}
+
+.encuesta{
+    font-family: CR;
+    font-size:22px;
+    text-align:start;
 }
 
 .texto{
@@ -42,3 +54,16 @@ h2{
     text-align: center;
     letter-spacing: 10px;
 }
+
+.boton {
+    background-color: #ffffff; /* Color de fondo del botón */
+    color: #000; /* Color del texto del botón */
+    cursor: pointer; /* Cambia el cursor al puntero al pasar por encima */
+    transition: background-color 0.3s; /* Animación de cambio de color de fondo */
+}
+
+.boton:hover {
+    background-color: #ffcdb6; /* Cambia el color de fondo al pasar el cursor por encima */
+    border-style: solid;
+}
+
