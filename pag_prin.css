@@ -7,7 +7,10 @@
 .paleta{
     grid-column: 1;
     grid-row: 1;
-    
+}
+.paleta_img{
+    height:60px;
+    width: 80px;
 }
 .title{
     grid-column: 2;
@@ -34,5 +37,5 @@ h3{
 h4{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
