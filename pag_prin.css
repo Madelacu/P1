@@ -20,13 +20,13 @@
 }
 .row3{
     height: 300px;
-    width: 480px;
+    width: 100%;
     border-radius: 10px;
 }
 
 .row2{
     height:300px;
-    width: 720px;
+    width: 100%;
     border-radius: 10px;
 }
 
