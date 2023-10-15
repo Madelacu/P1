@@ -1,26 +1,5 @@
 body {
     background-color: #FFFAFA !important;
-  }
-
-.header{
-    display: grid;
-    grid-template-columns: 100px 100px;
-    grid-template-rows: 50px;
-    
-}
-.paleta{
-    grid-column: 1;
-    grid-row: 1;
-}
-.paleta_img{
-    height:60px;
-    width: 80px;
-}
-.title{
-    grid-column: 2;
-    grid-row: 1;
-    font-family: 'Georgia';
-    font-size: 21px;
 }
 .row3{
     height: 300px;
