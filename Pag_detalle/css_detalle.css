@@ -67,3 +67,19 @@ h2{
     border-style: solid;
 }
 
+.boton2 {
+    background-color: #ffffff; /* Color de fondo del botón */
+    color: #000; /* Color del texto del botón */
+    cursor: pointer; /* Cambia el cursor al puntero al pasar por encima */
+    transition: background-color 0.3s; /* Animación de cambio de color de fondo */
+}
+
+.boton2:hover {
+    background-color: #ff5353; /* Cambia el color de fondo al pasar el cursor por encima */
+    border-style: solid;
+}
+
+
+.d-flex {
+    justify-content: end;
+  }
