@@ -5,4 +5,4 @@ Miembros del grupo:
     - María De La Cuadra Fernández
     - Jonatan Meza Mendoza
 
-Link al repositorio GitHub:
+Link al repositorio GitHub: https://github.com/Madelacu/P1
