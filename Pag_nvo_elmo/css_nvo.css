@@ -38,8 +38,13 @@ body {
     font-family: CR;
     font-size:17px;
     text-align:start;
-    
 }
+
+.checkbox {
+    font-family: CR;
+    font-size: 18px;
+    text-align: center;
+  }  
 
 .boton {
     background-color: #ffffff; /* Color de fondo del botón */
