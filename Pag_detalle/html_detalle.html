@@ -1,6 +1,5 @@
 <!doctype html>
 <html dir="ltr">
-  <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,24 +10,20 @@
     <link rel="stylesheet" href="css_detalle.css">
     
     <title>Galeria de arte | Página detalle</title>
-  </head>
 
   <body>
-        <div>
-            <div class="row">
-                <div class="col">
-                    <img src="luca.jpg" class = "fondo" >
-                </div>
-            </div>
+        <!--Imagen superior de la pagina-->
+        <div class="row">
+            <img src="luca.jpg" class = "img_prin" >
         </div>
 
+        <!--Primer seccion de pagina (Titulo, subtitulo y texto)-->
         <div class="container text-center">
             <div class="row">
-                <div class="col">
-                    <br><br><br>
-                    <h1 class="titulo">Renacimiento</h1>
+                <div class="col-md"><br><br><br>
+                    <p class="title">Renacimiento</p>
                     <br>
-                    <p class ="fecha">Del 1400 al 1480 </p>
+                    <p class ="subtitle">Del 1400 al 1480 </p>
                     <br>
                     <p class ="texto">
                         El Renacimiento fue un movimiento cultural y artístico que se produjo en Europa 
@@ -36,9 +31,18 @@
                         Edad Media y los inicios de la Edad Moderna, y se caracterizó por un cambio en
                         la mentalidad europea, que pasó de ser teocéntrica a antropocéntrica
                     </p>
+                    <br>
+                </div>
+            </div>
+        </div>
                     
-                    <p class="titulo3">Tipos de bellas artes involucrados en la corriente:</p>
-                    <table class="table">      
+        <!--Segunda seccion de la pagina (Titulo de tabla y tabla)-->
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md">
+                    <p class="subtitlen">Tipos de bellas artes involucrados en la corriente:</p>
+                    <br>
+                    <table class="table">     
                         <tbody>      
                             <tr>         
                                 <td>Pintura</td>         
@@ -49,141 +53,125 @@
                             </tr>
                         </tbody>
                     </table>
-                    <br><br>
-                </div>
+                 </div>
             </div>
+            <br><br>
         </div>
 
-<!--FIn de Grid de 3x3-->
+        <!--Tercera seccion de la pagina (Galeria y descripciones de las obras)-->
+        <div class="row">
+            <div class="col-md">
+                <img src="uno.png" class = "galeria" >
+                <p class ="texto"><br>Título: Bacchus and Ariadne</p>
+                <p class ="texto">Creador: Titian</p>
+                <p class ="texto">Fecha de creación: 1520/1523</p>
+                <p class ="texto">Técnica: Óleo sobre lienzo</p>
+            </div>
 
-        <div>
+            <div class="col-md">
+                <img src="dos.png" class = "galeria" >
+                <p class ="texto"><br>Título: The Interrupted Sleep</p>
+                <p class ="texto">Creador: François Boucher</p>
+                <p class ="texto">Fecha de creación: 1750</p>
+                <p class ="texto">Técnica: Óleo sobre lienzo</p>
+            </div>
+
+            <div class="col-md">
+                <img src="tres.png" class = "galeria" >
+                <p class ="texto"><br>Título: The Feast of the Gods</p>
+                <p class ="texto">Creador: Giovanni Bellini and Titian</p>
+                <p class ="texto">Fecha de creación: 1514/1529</p>
+                <p class ="texto">Técnica: Óleo sobre lienzo</p>
+                <br><br><brr>
+            </div>
+            <hr>
+        </div>
+        
+        <!--Cuarta seccion de la pagina (Titulo formulario)-->
+        <div class="row">
+            <p class ="title2">¡Se parte de esta corriente artística y sube tu obra!</p>
+        </div>
+
+        <!--Quinta seccion de la pagina (Formulario)-->
+        <div class="container text-center">
+            <hr><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="col-md">
+                        <p class="subtitlest">Título de la obra</p>
+                    </div>
+                    <div class = "form-floating">
+                        <input type="text" class="form-control" id="NombreObra">
+                        <label for="NombreObra">Ej. The Interrupted Sleep</label><br><br>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="col-md">
+                        <p class="encuesta">Creador de la obra</p>
+                    </div>
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="Creadorobra">
+                        <label for="Creadorobra">Ej. François Boucher</label> <br><br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="col-md">
+                        <p class="subtitlest">Fecha de creación</p>
+                    </div>
+                    <div class="form-floating">
+                        <input type="date" class="form-control" id="fecha">
+                        <label for="Creadorobra">Ej. 22/10/2001</label>
+                        <br> <br>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="col-md">
+                        <p class="subtitlest">Técnica</p>
+                    </div>
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="Creadorobra">
+                        <label for="Creadorobra">Ej. Óleo sobre lienzo</label> <br><br>
+                    </div>
+                </div>
+            </div>
+
             <div class="row">
                 <div class="col-md">
-                    <img src="uno.png" class = "galeria" >
-                    <p class ="texto"><br>Título: Bacchus and Ariadne</p>
-                    <p class ="texto">Creador: Titian</p>
-                    <p class ="texto">Fecha de creación: 1520/1523</p>
-                    <p class ="texto">Técnica: Óleo sobre lienzo</p>
-                </div>
-
-                <div class="col-md">
-                    <img src="dos.png" class = "galeria" >
-                    <p class ="texto"><br>Título: The Interrupted Sleep</p>
-                    <p class ="texto">Creador: François Boucher</p>
-                    <p class ="texto">Fecha de creación: 1750</p>
-                    <p class ="texto">Técnica: Óleo sobre lienzo</p>
-                </div>
-
-                <div class="col-md">
-                    <img src="tres.png" class = "galeria" >
-                    <p class ="texto"><br>Título: The Feast of the Gods</p>
-                    <p class ="texto">Creador: Giovanni Bellini and Titian</p>
-                    <p class ="texto">Fecha de creación: 1514/1529</p>
-                    <p class ="texto">Técnica: Óleo sobre lienzo</p>
+                    <h1 class="encuesta">¡Sube tu obra!</h1>
                 </div>
             </div>
+            <div class="row">
+                <div class = "col-md-6">
+                    <div class = "d-flex flex-row">
+                        <div class="input-group md-6">
+                            <input type="text" class="form-control" id="inputObra" >
+                            <button class="input-group-text boton rounded" type="button">Guardar</button>
+                        </div>
+                    </div>
+                </div>
             
-            <br><hr>
-            <p class ="titulo2">¡Se parte de esta corriente artística y sube tu obra!</p>
-            
-            <div class="container text-center">
-                <hr><br>
 
-                <div class="row">
-                    
-                </div>
-    
-                <div class="row">
-                    <div class = "col-md-6">
-
-                        <div class="col-md">
-                            <h1 class="encuesta">Título de la obra</h1>
-                        </div>
-
-                        <div class = "form-floating">
-                            <input type="text" class="form-control" id="NombreObra">
-                            <label for="NombreObra">Ej. The Interrupted Sleep</label> <br> <br>
-                        </div>
-
-                    </div>
-
-                    <div class = "col-md-6">
-
-                        <div class="col-md">
-                            <h1 class="encuesta">Creador de la obra</h1>
-                        </div>
-
-                        <div class="form-floating">
-                            <input type="text" class="form-control" id="Creadorobra">
-                            <label for="Creadorobra">Ej. François Boucher</label> <br><br>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class = "col-md-6">
-
-                        <div class="col-md">
-                            <h1 class="encuesta">Fecha de creación</h1>
-                        </div>
-
-                        <div class="form-floating">
-                            <input type="date" class="form-control" id="fecha">
-                            <label for="Creadorobra">Ej. 22/10/2001</label>
-                            <br> <br>
-                        </div>
-                    </div>
-
-                    <div class = "col-md-6">
-
-                        <div class="col-md">
-                            <h1 class="encuesta">Técnica</h1>
-                        </div>
-
-                        <div class="form-floating">
-                            <input type="text" class="form-control" id="Creadorobra">
-                            <label for="Creadorobra">Ej. Óleo sobre lienzo</label> <br><br>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="row">
-                    <div class="col-md">
-                        <h1 class="encuesta">¡Sube tu obra!</h1>
-                    </div>
+                <div class="col-md-6 d-flex">
+                    <button class="input-group-text boton" type="button" 
+                        onclick="window.location.href='../Pagina_principal.html'"
+                    >Regresar a Inicio</button>
                 </div>
                 
-                <div class="row">
-                    <div class = "col-md-6">
-                        <div class = "d-flex flex-row">
-                            <div class="input-group md-6">
-                                <input type="text" class="form-control" id="inputObra" >
-                                <button class="input-group-text boton rounded" type="button">Guardar</button>
-                            </div>
-                        </div>
-                    </div>
-                
-    
-                    <div class="col-md-6 d-flex">
-                        <button class="input-group-text boton" type="button" 
-                            onclick="window.location.href='../Pagina_principal.html'"
-                        >Regresar a Inicio</button>
-                    </div>
-                    
+            </div>
+            <br><br><hr><br>
+        
+            <div class="row">
+                <div class="input-group">
+                    <button class="input-group-text boton2 rounded" type="button">Editar</button>
+                    &nbsp;&nbsp;
+                    <button class="input-group-text boton2 rounded" type="button">Eliminar</button>
                 </div>
-                <br><br><hr><br>
-
-                <div class="row">
-                    <div class="input-group">
-                         <button class="input-group-text boton2 rounded" type="button">Editar</button>
-                         &nbsp;&nbsp;
-                         <button class="input-group-text boton2 rounded" type="button">Eliminar</button>
-                    </div>
-                </div>
-                <br><br><br>
-
-
             </div>
 
         </div>
+    </body>
+
 </html>

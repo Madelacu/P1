@@ -5,10 +5,9 @@ body {
     background-color: #FFF0D9;
   }
 
-.fondo{
+.img_prin{
     height: auto; 
     width: 100%; 
-    opacity: 1;
 }
 
 .galeria{
@@ -18,35 +17,25 @@ body {
 
 }
 
-.titulo {
+.title {
     font-family: CB;
     font-size:38px;
     text-align:center;
 }
 
-.titulo2 {
+.title2 {
     font-family: CB;
     font-size:30px;
     text-align:center;
 }
 
-.titulo3{
-    font-family: CB;
-    font-size:20px;
-    text-align:center;
-}
-
-.table{
-    background-color:#FFF0D9;
-}
-
-.fecha{
+.subtitle{
     font-family: CR;
     font-size:22px;
     text-align:center;
 }
 
-.encuesta{
+.subtitlen{
     font-family: CR;
     font-size:22px;
     text-align:start;
@@ -54,9 +43,26 @@ body {
 
 .texto{
     font-family: CR;
-    font-size:17px;
+    font-size:18px;
     text-align:start
-    
+}
+
+.subtitlest{
+    font-family: CR;
+    font-size:22px;
+    text-align:start;
+}
+
+
+
+.table{
+    background-color:#FFF0D9;
+}
+
+.encuesta{
+    font-family: CR;
+    font-size:22px;
+    text-align:start;
 }
 
 .boton {
