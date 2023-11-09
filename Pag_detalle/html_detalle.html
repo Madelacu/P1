@@ -12,6 +12,7 @@
     <title>Galeria de arte | Página detalle</title>
 
   <body>
+
         <!--Imagen superior de la pagina-->
         <div class="row">
             <img src="luca.jpg" class = "img_prin" >
@@ -40,9 +41,9 @@
         <div class="container text-center">
             <div class="row">
                 <div class="col-md">
-                    <p class="subtitlen">Tipos de bellas artes involucrados en la corriente:</p>
+                    <p class="subtitlest">Tipos de bellas artes involucrados en la corriente:</p>
                     <br>
-                    <table class="table">     
+                    <table class="table table-borderedless" >
                         <tbody>      
                             <tr>         
                                 <td>Pintura</td>         
@@ -107,7 +108,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="col-md">
-                        <p class="encuesta">Creador de la obra</p>
+                        <p class="subtitlest">Creador de la obra</p>
                     </div>
                     <div class="form-floating">
                         <input type="text" class="form-control" id="Creadorobra">
@@ -140,38 +141,42 @@
 
             <div class="row">
                 <div class="col-md">
-                    <h1 class="encuesta">¡Sube tu obra!</h1>
+                    <h1 class="subtitlest">¡Sube tu obra!</h1>
                 </div>
             </div>
+
             <div class="row">
                 <div class = "col-md-6">
-                    <div class = "d-flex flex-row">
+                    <div class = "flex-row">
                         <div class="input-group md-6">
                             <input type="text" class="form-control" id="inputObra" >
-                            <button class="input-group-text boton rounded" type="button">Guardar</button>
+                            <button class="input-group-text botona rounded" type="button">Guardar</button>
                         </div>
                     </div>
                 </div>
             
-
                 <div class="col-md-6 d-flex">
-                    <button class="input-group-text boton" type="button" 
+                    <button class="input-group-text botona" type="button" 
                         onclick="window.location.href='../Pagina_principal.html'"
                     >Regresar a Inicio</button>
                 </div>
                 
             </div>
             <br><br><hr><br>
+        </div>
         
+        <!--Sexta seccion de la pagina (Botones finales)-->
+        <div class="container text-center">
             <div class="row">
                 <div class="input-group">
-                    <button class="input-group-text boton2 rounded" type="button">Editar</button>
+                    <button class="input-group-text botonr rounded" type="button">Editar</button>
                     &nbsp;&nbsp;
-                    <button class="input-group-text boton2 rounded" type="button">Eliminar</button>
+                    <button class="input-group-text botonr rounded" type="button">Eliminar</button>
                 </div>
             </div>
-
+            <br><br>
         </div>
+        
     </body>
 
 </html>

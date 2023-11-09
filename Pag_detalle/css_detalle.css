@@ -14,7 +14,6 @@ body {
     height: auto; 
     width: 100%; 
     opacity: 0.8;
-
 }
 
 .title {
@@ -35,7 +34,7 @@ body {
     text-align:center;
 }
 
-.subtitlen{
+.subtitlest{
     font-family: CR;
     font-size:22px;
     text-align:start;
@@ -47,48 +46,29 @@ body {
     text-align:start
 }
 
-.subtitlest{
-    font-family: CR;
-    font-size:22px;
-    text-align:start;
-}
-
-
-
-.table{
-    background-color:#FFF0D9;
-}
-
-.encuesta{
-    font-family: CR;
-    font-size:22px;
-    text-align:start;
-}
-
-.boton {
+.botona {
     background-color: #ffffff; /* Color de fondo del botón */
     color: #000; /* Color del texto del botón */
     cursor: pointer; /* Cambia el cursor al puntero al pasar por encima */
     transition: background-color 0.3s; /* Animación de cambio de color de fondo */
 }
 
-.boton:hover {
+.botona:hover {
     background-color: #ffcdb6; /* Cambia el color de fondo al pasar el cursor por encima */
     border-style: solid;
 }
 
-.boton2 {
+.botonr {
     background-color: #ffffff; /* Color de fondo del botón */
     color: #000; /* Color del texto del botón */
     cursor: pointer; /* Cambia el cursor al puntero al pasar por encima */
     transition: background-color 0.3s; /* Animación de cambio de color de fondo */
 }
 
-.boton2:hover {
+.botonr:hover {
     background-color: #ff5353; /* Cambia el color de fondo al pasar el cursor por encima */
     border-style: solid;
 }
-
 
 .d-flex {
     justify-content: end;
