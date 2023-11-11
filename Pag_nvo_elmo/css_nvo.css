@@ -5,12 +5,11 @@ body {
     background-color: #FFFAFA;
   }
 
-  .fondo{
+.fondo{
     height: auto;
     max-height: 70%; 
     width: auto;
     max-width: 75%; 
-    opacity: 1;
     float: left;
     margin-left: 80px;
 }
@@ -19,24 +18,11 @@ body {
     height: auto; 
     width: 100%; 
     opacity: 0.8;
-
 }
 
-.titulo {
+.subtitlestn{
     font-family: CB;
-    font-size:38px;
-    text-align:center;
-}
-
-.fecha{
-    font-family: CR;
     font-size:22px;
-    text-align:start;
-}
-
-.texto{
-    font-family: CR;
-    font-size:17px;
     text-align:start;
 }
 
@@ -44,16 +30,18 @@ body {
     font-family: CR;
     font-size: 18px;
     text-align: center;
+    display: block;
+    text-align: left;
   }  
 
-.boton {
+.botona {
     background-color: #ffffff; /* Color de fondo del botón */
     color: #000; /* Color del texto del botón */
     cursor: pointer; /* Cambia el cursor al puntero al pasar por encima */
     transition: background-color 0.3s; /* Animación de cambio de color de fondo */
 }
 
-.boton:hover {
+.botona:hover {
     background-color: #ffcdb6; /* Cambia el color de fondo al pasar el cursor por encima */
     border-style: solid;
 }

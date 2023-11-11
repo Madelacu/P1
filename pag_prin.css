@@ -1,14 +1,30 @@
+@font-face {font-family: CR;src: url("/Pag_detalle/Cardo-Regular.ttf");}
+@font-face {font-family: CB;src: url("/Pag_detalle/Cardo-Bold.ttf");}
+
 body {
     background-color: #FFFAFA !important;
 }
-.row3{
-    height: 300px;
-    width: 100%;
-    border-radius: 10px;
+
+.subtitle{
+    font-family: CR;
+    font-size:25px;
+    text-align:center;
 }
 
-.row2{
-    height:300px;
+.texto{
+    font-family: CR;
+    font-size:18px;
+    text-align:center
+}
+
+.title2 {
+    font-family: CB;
+    font-size:28px;
+    text-align:center;
+}
+
+.rows{
+    height: 300px;
     width: 100%;
     border-radius: 10px;
 }
@@ -17,11 +33,13 @@ h3{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
 }
+
 h4{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     letter-spacing: 2px;
 }
+
 p{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;

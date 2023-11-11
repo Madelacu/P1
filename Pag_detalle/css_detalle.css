@@ -3,7 +3,7 @@
 
 body {
     background-color: #FFF0D9;
-  }
+}
 
 .img_prin{
     height: auto; 
@@ -72,4 +72,5 @@ body {
 
 .d-flex {
     justify-content: end;
-  }
+}
+
