@@ -2,10 +2,10 @@
 
 **Nombre de la página web**: Galería de Arte
 
-**Miembros del grupo:**    
-    - María De La Cuadra Fernández
-    
-    - Jonatan Meza Mendoza
+**Miembros del grupo:**
+
+- María De La Cuadra Fernández.
+- Jonatan Meza Mendoza.
 
 Este proyecto de galería de arte consta de tres páginas HTML interconectadas que permiten explorar y contribuir a la exposición de 
 distintas corrientes artísticas. A continuación, se presenta un resumen de cada una de las páginas principales del proyecto:
