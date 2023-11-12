@@ -5,7 +5,7 @@
 **Miembros del grupo:**
 
 - María De La Cuadra Fernández.
-- Jonatan Meza Mendoza.
+- Jonatan Israel Meza Mendoza.
 
 Este proyecto de galería de arte consta de tres páginas HTML interconectadas que permiten explorar y contribuir a la exposición de 
 distintas corrientes artísticas. A continuación, se presenta un listado de los elementos principales, atributos y sub-elementos del
