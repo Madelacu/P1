@@ -1,0 +1,76 @@
+@font-face {font-family: CR;src: url("../Pag_principal/Fuentes/Cardo-Regular.ttf");}
+@font-face {font-family: CB;src: url("../Pag_principal/Fuentes/Cardo-Bold.ttf");}
+
+body {
+    background-color: #FFF0D9;
+}
+
+.img_prin{
+    height: auto; 
+    width: 100%; 
+}
+
+.galeria{
+    height: auto; 
+    width: 100%; 
+    opacity: 0.8;
+}
+
+.title {
+    font-family: CB;
+    font-size:38px;
+    text-align:center;
+}
+
+.title2 {
+    font-family: CB;
+    font-size:30px;
+    text-align:center;
+}
+
+.subtitle{
+    font-family: CR;
+    font-size:22px;
+    text-align:center;
+}
+
+.subtitlest{
+    font-family: CR;
+    font-size:22px;
+    text-align:start;
+}
+
+.texto{
+    font-family: CR;
+    font-size:18px;
+    text-align:start
+}
+
+.botona {
+    background-color: #ffffff; /* Color de fondo del botón */
+    color: #000; /* Color del texto del botón */
+    cursor: pointer; /* Cambia el cursor al puntero al pasar por encima */
+    transition: background-color 0.3s; /* Animación de cambio de color de fondo */
+}
+
+.botona:hover {
+    background-color: #ffcdb6; /* Cambia el color de fondo al pasar el cursor por encima */
+    border-style: solid;
+}
+
+.botonr {
+    background-color: #ffffff; /* Color de fondo del botón */
+    color: #000; /* Color del texto del botón */
+    cursor: pointer; /* Cambia el cursor al puntero al pasar por encima */
+    transition: background-color 0.3s; /* Animación de cambio de color de fondo */
+}
+
+.botonr:hover {
+    background-color: #ff5353; /* Cambia el color de fondo al pasar el cursor por encima */
+    border-style: solid;
+}
+
+.d-flex {
+    justify-content: end;
+}
+

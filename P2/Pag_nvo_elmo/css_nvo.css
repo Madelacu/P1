@@ -1,0 +1,51 @@
+@font-face {font-family: CR;src: url("../Pag_principal/Fuentes/Cardo-Regular.ttf");}
+@font-face {font-family: CB;src: url("../Pag_principal/Fuentes/Cardo-Bold.ttf");}
+
+body {
+    background-color: #FFFAFA;
+}
+
+.fondo{
+    height: auto;
+    max-height: 70%; 
+    width: auto;
+    max-width: 75%; 
+    float: left;
+    margin-left: 80px;
+}
+
+.galeria{
+    height: auto; 
+    width: 100%; 
+    opacity: 0.8;
+}
+
+.subtitlestn{
+    font-family: CB;
+    font-size:22px;
+    text-align:start;
+}
+
+.checkbox {
+    font-family: CR;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    text-align: left;
+}  
+
+.botona {
+    background-color: #ffffff; /* Color de fondo del botón */
+    color: #000; /* Color del texto del botón */
+    cursor: pointer; /* Cambia el cursor al puntero al pasar por encima */
+    transition: background-color 0.3s; /* Animación de cambio de color de fondo */
+}
+
+.botona:hover {
+    background-color: #ffcdb6; /* Cambia el color de fondo al pasar el cursor por encima */
+    border-style: solid;
+}
+
+.d-flex {
+    justify-content: end;
+}
