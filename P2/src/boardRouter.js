@@ -26,6 +26,28 @@ router.get('/post/:id', (req, res) => {
     res.render('show_post', { post });
 });
 
+router.post('/post/:id/update', (req, res) => {
+    const { image, title, date1, date2, edad1, edad2, descripcion, subelemento } = req.body;
+    const postId = req.params.id;
+    
+    // Asegúrate de que subelemento sea un array
+    const subelementoArray = subelemento ? [subelemento] : [];
+
+    boardService.updatePost(postId, {
+        image,
+        title,
+        date1,
+        date2,
+        edad1,
+        edad2,
+        descripcion,
+        // Ajusta el acceso a subelemento
+        subelemento: subelementoArray[0],
+    });
+    let post = boardService.getPost(req.params.id);
+    res.render('show_post', { post });    
+});
+
 router.get('/post/:id/delete', (req, res) => {
 
     boardService.deletePost(req.params.id);

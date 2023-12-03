@@ -126,3 +126,16 @@ export function getPosts(){
 export function getPost(id){
     return posts.get(id);
 }
+
+export function updatePost(postId, postData) {
+    let post = posts.get(postId) || {};
+    post = { ...post, ...postData.post };
+    post.subelemento = post.subelemento || [];
+    if (postData.subelemento !== undefined) {
+  
+      // Añade el subelemento al final del array
+      post.subelemento.push(postData.subelemento);
+    }
+    posts.set(postId, post);
+    return true;
+}
