@@ -1,5 +1,5 @@
-@font-face {font-family: CR;src: url("../Pag_principal/Fuentes/Cardo-Regular.ttf");}
-@font-face {font-family: CB;src: url("../Pag_principal/Fuentes/Cardo-Bold.ttf");}
+@font-face {font-family: CR;src: url("/Fuentes/Cardo-Regular.ttf");}
+@font-face {font-family: CB;src: url("/Fuentes/Cardo-Bold.ttf");}
 
 body {
     background-color: #FFFAFA;
@@ -22,7 +22,7 @@ body {
 
 .subtitlestn{
     font-family: CB;
-    font-size:22px;
+    font-size:18px;
     text-align:start;
 }
 
@@ -39,6 +39,8 @@ body {
     color: #000; /* Color del texto del botón */
     cursor: pointer; /* Cambia el cursor al puntero al pasar por encima */
     transition: background-color 0.3s; /* Animación de cambio de color de fondo */
+    display: inline-block; /* Establece el botón como inline-block */
+    text-decoration: none;
 }
 
 .botona:hover {
