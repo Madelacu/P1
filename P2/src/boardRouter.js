@@ -11,12 +11,56 @@ router.get('/', (req, res) => {
 });
 
 router.post('/post/new', (req, res) => {
+    const { title, date1, date2, edad1, edad2, descripcion, image, subelemento } = req.body;
 
-    let { user, title, text } = req.body;
+    // Validar los campos del formulario
+    const requiredFields = {
+        'title': 'Nombre de la corriente',
+        'date1': 'Fecha de Inicio',
+        'edad1': 'Era de la fecha de inicio',
+        'date2': 'Fecha de Finalización',
+        'edad2': 'Era de la fecha de finalización',
+        'descripcion': 'Descripción',
+        'image': 'URL'
+    };
 
-    boardService.addPost({ user, title, text });
+    const missingFields = Object.keys(requiredFields).filter(field => !req.body[field]);
 
-    res.render('saved_post');
+    if (missingFields.length > 0) {
+        // Si hay campos vacíos, asignar valores a cada variable que falte
+        const titleError = missingFields.includes('title') ? 'Nombre de la corriente' : '';
+        const date1Error = missingFields.includes('date1') ? 'Fecha de inicio' : '';
+        const date2Error = missingFields.includes('date2') ? 'Fecha de finalización' : '';
+        const edad1Error = missingFields.includes('edad1') ? 'Era inicio' : '';
+        const edad2Error = missingFields.includes('edad2') ? 'Era fin' : '';
+        const descripcionError = missingFields.includes('descripcion') ? 'Descripción' : '';
+        const imageError = missingFields.includes('image') ? 'URL' : '';
+
+        // Renderizar la vista de error con los datos ingresados y los mensajes de error
+        res.render('error', {
+            title,
+            date1,
+            date2,
+            edad1,
+            edad2,
+            descripcion,
+            image,
+            subelemento,
+            titleError,
+            date1Error,
+            date2Error,
+            edad1Error,
+            edad2Error,
+            descripcionError,
+            imageError
+        });
+    } else {
+        // Procesar los datos del formulario y agregarlos al servicio de tableros
+        boardService.addPost({ title, date1, date2, edad1, edad2, descripcion, image, subelemento });
+
+        // Redirigir a la página principal con un mensaje de éxito
+        res.redirect('/');
+    }
 });
 
 router.get('/post/:id', (req, res) => {
