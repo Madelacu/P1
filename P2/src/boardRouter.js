@@ -30,7 +30,7 @@ router.post('/post/:id/update', (req, res) => {
     const { image, title, date1, date2, edad1, edad2, descripcion, subelemento } = req.body;
     const postId = req.params.id;
     
-    // Asegúrate de que subelemento sea un array
+    // Asegura que el subelemento sea un array
     const subelementoArray = subelemento ? [subelemento] : [];
 
     boardService.updatePost(postId, {

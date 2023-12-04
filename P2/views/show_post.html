@@ -41,7 +41,7 @@
 				    <p class ="texto">{{post.descripcion}}</p><br>
                 </div>
             </div>
-
+            <!-- Segunda sección de la página presentación de subelementos -->
             <div class="row">
                 {{#post.subelemento}}
                     <div class="col-md-4 col-sm-12 post-item">
@@ -74,7 +74,7 @@
                 {{/post.subelemento}}
             </div>
             <div class="row">
-                <!-- Título del formulario -->
+                <!-- Título del formulario para agregar subelementos -->
                 <p class ="title2">¡Se parte de esta corriente artística y sube tu obra!</p>
             </div>
             <div class="container text-center">
@@ -135,7 +135,7 @@
                             <!-- Sección del formulario para subir obra -->
                             <div class = "col-md-6">
                                 <div class = "flex-row">
-                                    <!-- Espacio para subir la obra y botón para subir todo el formulario -->
+                                    <!-- Espacio para subir el url de la obra y botón para subir todo el formulario -->
                                     <div class="input-group md-6">
                                         <input type="text" class="form-control" name="subelemento[obra]" required >
                                         <button class="input-group-text botona rounded" type="submit" value="Guardar">Guardar</button>
