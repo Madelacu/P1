@@ -51,3 +51,11 @@ body {
 .d-flex {
     justify-content: end;
 }
+
+/* Estilos para el textarea */
+#descripcion {
+    height: 150px; /* Altura del textarea */
+    resize: vertical; /* Permite redimensionar verticalmente */
+    overflow-y: auto; /* Añade una barra de desplazamiento vertical si es necesario */
+    width: 100%; /* Opcional: Ancho del textarea al 100% del contenedor */
+}
