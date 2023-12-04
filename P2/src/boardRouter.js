@@ -56,12 +56,17 @@ router.post('/post/new', (req, res) => {
         });
     } else {
         // Procesar los datos del formulario y agregarlos al servicio de tableros
-        boardService.addPost({ title, date1, date2, edad1, edad2, descripcion, image, subelemento });
+        const postId = boardService.addPost({ title, date1, date2, edad1, edad2, descripcion, image, subelemento });
 
         // Redirigir a la página principal con un mensaje de éxito
-        res.redirect('/');
+
+        const postUrl = `/post/${postId}`;
+        res.redirect(postUrl);
+
+
     }
 });
+
 
 router.get('/post/:id', (req, res) => {
 

@@ -344,6 +344,8 @@ export function addPost(post) {
     let id = nextId++;
     post.id = id.toString();
     posts.set(post.id, post);
+
+    return post.id; // Devuelve el ID del post recién creado
 }
 
 export function deletePost(id){
