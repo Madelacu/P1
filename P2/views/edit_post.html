@@ -41,34 +41,17 @@
 				</div>
 			</div>
 			  
-
 			<div class="row">
-                <div class="col-md-3">
-                    <p class="subtitlestn">Fecha de inicio: </p>
-                </div>
-				<div class="col-md-2">
-                    <p class="subtitlestn">a. C. / d. C. </p>
-                </div>
-				<div class="col-md-2">
-				</div>
-                <div class="col-md-3">
-                    <p class="subtitlestn">Fecha de finalización: </p>
-                </div>
-				<div class="col-md-2">
-                    <p class="subtitlestn">a. C. / d. C. </p>
-                </div>
-            </div>
-
-            <div class="row">
-
 				<div class="col-md-3">
+                    <p class="subtitlestn">Fecha de inicio: </p>
 					<div class="form-floating">
-					  <input type="number" class="form-control" id="date1" name="date1" value="{{ post.date1 }}" maxlength="4" oninput="this.value = this.value.slice(0, 4)">
-					  <label for="date1">Año</label>
+						<input type="number" class="form-control" id="date1" name="date1" value="{{ post.date1 }}" maxlength="4" oninput="this.value = this.value.slice(0, 4)">
+						<label for="date1">Año</label>
 					</div>
-				</div>
-				
+                </div>
+
 				<div class="col-md-2">
+                    <p class="subtitlestn">a. C. / d. C. </p>
 					<div class="form-floating">
 						<select class="form-control" id="edad1" name="edad1" required>
 							<option value="a. C." {% if post.edad1 == "a. C." %} selected {% endif %}>a. C.</option>
@@ -76,21 +59,22 @@
 						</select>
 						<label for="edad1">Era</label>
 					</div>
-				</div>
-				
+                </div>
 
 				<div class="col-md-2">
 					<p>-</p>
 				</div>
 
 				<div class="col-md-3">
+                    <p class="subtitlestn">Fecha de finalización: </p>
 					<div class="form-floating">
-					  <input type="number" class="form-control" id="date2" name="date2" value="{{ post.date2 }}" maxlength="4" oninput="this.value = this.value.slice(0, 4)">
-					  <label for="date2">Año</label>
+						<input type="number" class="form-control" id="date2" name="date2" value="{{ post.date2 }}" maxlength="4" oninput="this.value = this.value.slice(0, 4)">
+						<label for="date2">Año</label>
 					</div>
-				</div>
+                </div>
 
 				<div class="col-md-2">
+                    <p class="subtitlestn">a. C. / d. C. </p>
 					<div class="form-floating">
 						<select class="form-control" id="edad2" name="edad2" required>
 							<option value="a. C." {% if post.edad2 == "a. C." %} selected {% endif %}>a. C.</option>
@@ -98,12 +82,10 @@
 						</select>
 						<label for="edad2">Era</label>
 					</div>
-				</div>		
-
-				<div class="col-md-1">
 				</div>
-
+				
             </div><br><br>
+
 
 			<div class="row">
                 <div class = "col-md-6">
