@@ -23,7 +23,7 @@
             <img src="{{post.image}}" class = "img_prin" >
         </div>
 
-        <!-- Primera sección de la página (Título, fecha y texto) -->
+        <!-- Botones de editar y eliminar al inicio de la página -->
         <div class="container text-center">
             <br>
             <div class="row md-12 d-flex">
@@ -34,6 +34,7 @@
                 </div>
             </div>
 
+            <!-- Primera sección de la página (Título, fechas y descripción de la época) -->
             <div class ="row">
                 <div class ="col-md"><br><br>
                     <p class="title">{{post.title}}</p><br>
@@ -43,29 +44,34 @@
             </div>
             <!-- Segunda sección de la página presentación de subelementos -->
             <div class="row">
+                <!--Bucle sobre el array de subelementos-->
                 {{#post.subelemento}}
                     <div class="col-md-4 col-sm-12 post-item">
                         <div class="post-link">
+                            <!--Enlace a la imágen de la obra-->
                             {{#obra}}
                                 <img src="{{.}}" class="galeria">
                             {{/obra}}
-            
+                            <!--Título de la obra-->
                             {{#titulo}}
                                 <p class="texto"><br>Título: {{.}}</p>
                             {{/titulo}}
                         </div>
             
                         <div class="post-link">
+                            <!--Artista de la obra-->
                             {{#Creador}}
                                 <p class="texto">Creador: {{.}}</p>
                             {{/Creador}}
-            
+                            
+                            <!--Fecha de creación de la obra-->
                             {{#Fecha_Creacion}}
                                 <p class="texto">Fecha de creación: {{.}}</p>
                             {{/Fecha_Creacion}}
                         </div>
             
                         <div class="post-link">
+                            <!--Técnica de la obra-->
                             {{#tecnica}}
                                 <p class="texto">Técnica: {{.}}</p>
                             {{/tecnica}}
@@ -147,7 +153,6 @@
                             <div class="col-md-6 d-flex">
                                 <a class="input-group-text botona rounded" href="/" >Regresar a inicio</a>
                             </div>
-            
                         </div>
                     </div>
                 </form>

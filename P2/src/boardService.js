@@ -358,15 +358,21 @@ export function getPost(id){
     return posts.get(id);
 }
 
+//Función para actualizar la época con nuevos subelementos
 export function updatePost(postId, postData) {
-    let post = posts.get(postId) || {};
+    //Recuperar post existente con el id, si no existe crea un objeto vacío.
+    let post = posts.get(postId) || {}; 
+    //Combina los datos del post existente con el actualizado.
     post = { ...post, ...postData.post };
-    post.subelemento = post.subelemento || [];
-    if (postData.subelemento !== undefined) {
+    //Verifica que el post tenga una lista de subelemento, si no crea una vacía.
+    post.subelemento = post.subelemento || []; 
+    
+    //Verifica si se proporciona un nuevo subelemento
+    if (postData.subelemento !== undefined) { 
   
       // Añade el subelemento al final del array
       post.subelemento.push(postData.subelemento);
     }
-    posts.set(postId, post);
+    posts.set(postId, post); //Actualiza posts con el post actualizado.
     return true;
 }
