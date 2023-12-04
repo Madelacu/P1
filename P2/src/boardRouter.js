@@ -62,4 +62,9 @@ router.get('/post/:id/delete', (req, res) => {
     res.render('deleted_post');
 });
 
+router.get('/post/:id/edit', (req, res) => {
+    let post = boardService.getPost(req.params.id)
+    res.render('edit_post', { post });
+});
+
 export default router;

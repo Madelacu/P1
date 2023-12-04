@@ -376,3 +376,10 @@ export function updatePost(postId, postData) {
     posts.set(postId, post); //Actualiza posts con el post actualizado.
     return true;
 }
+
+export function edit_post(post, id) {
+
+    post.id = id.toString();
+    posts.set(post.id, post);
+
+}
