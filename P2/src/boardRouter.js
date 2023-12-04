@@ -67,4 +67,35 @@ router.get('/post/:id/edit', (req, res) => {
     res.render('edit_post', { post });
 });
 
+router.post('/post/:id/edit/edits', (req, res) => {
+    let { image, title, date1, date2, edad1, edad2, descripcion, subelemento } = req.body;
+    let id = req.params.id;
+
+    // Almacena la URL de la página anterior antes de realizar la redirección
+    let referer = req.get('referer');
+    console.log('Referer:', referer);
+
+    // Elimina la parte "/edit" de la URL
+    let updatedReferer = referer.replace('/edit', '');
+
+    // Obtiene el post existente antes de la actualización
+    let existingPost = boardService.getPost(id);
+
+    // Actualiza los campos específicos
+    existingPost.image = image;
+    existingPost.title = title;
+    existingPost.date1 = date1;
+    existingPost.date2 = date2;
+    existingPost.edad1 = edad1;
+    existingPost.edad2 = edad2;
+    existingPost.descripcion = descripcion;
+
+    // No sobrescribir el campo subelemento
+
+    // Actualiza el servicio
+    boardService.edit_post(existingPost, id);
+
+    // Redirige explícitamente a la URL de la página anterior sin "/edit"
+    res.redirect(updatedReferer);
+});
 export default router;
