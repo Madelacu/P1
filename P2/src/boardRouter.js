@@ -103,7 +103,7 @@ router.get('/post/:id/delete', (req, res) => {
 
     boardService.deletePost(req.params.id);
 
-    res.render('deleted_post');
+    res.redirect('/');
 });
 
 router.get('/post/:id/edit', (req, res) => {
