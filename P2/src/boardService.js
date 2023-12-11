@@ -1,6 +1,7 @@
 const posts = new Map();
 let nextId = 0;
 
+//Renacimiento
 addPost({title: "Renacimiento",
     date1: "1400",
     date2: "1480",
@@ -340,6 +341,7 @@ addPost({
     ]
 });
 
+//Función para agregar un nuevo post
 export function addPost(post) {
     let id = nextId++;
     post.id = id.toString();
@@ -348,14 +350,17 @@ export function addPost(post) {
     return post.id; // Devuelve el ID del post recién creado
 }
 
+//Función para eliminar un post por su ID
 export function deletePost(id){
     posts.delete(id);
 }
 
+//Función para obtener todos los posts
 export function getPosts(){
     return [...posts.values()];
 }
 
+//Función para obtener un post específico por su ID
 export function getPost(id){
     return posts.get(id);
 }
@@ -379,6 +384,7 @@ export function updatePost(postId, postData) {
     return true;
 }
 
+//Función para editar un post
 export function edit_post(post, id) {
 
     post.id = id.toString();

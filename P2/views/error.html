@@ -13,9 +13,10 @@
 <title>Galeria de arte | Elemento nuevo</title>
 
 <body>
-
+    <!-- Formulario para agregar un nuevo post -->
     <form action="/post/new" method="post">
 
+        <!-- Sección de la imagen de fondo -->
         <div class="row">
             <div class="col">
                 <!-- Imagen de fondo -->
@@ -25,6 +26,7 @@
 
         <div class="container text-center">
 
+            <!-- Sección de advertencia en caso de campos obligatorios no llenados -->
             <div class="advertencia-box">
                 <h2>¡Advertencia!</h2>
                 <p>Se necesitan llenar los siguientes campos:</p>
@@ -39,15 +41,14 @@
                 <p><strong>{{ imageError }}</strong></p>
             </div>
             
-        
-
-
+            <!-- Sección para el nombre de la corriente artística -->
             <div class="row">
                 <div class="col-md"><br>
                     <p class="subtitlestn">Nombre de la corriente: </p>
                 </div>
             </div>
 
+            <!-- Entrada para el nombre de la corriente artística -->
             <div class="row">
                 <div class="col-md-12">
                     <div class="form-floating">
@@ -58,7 +59,9 @@
                 </div>
             </div>
 
+            <!-- Sección para las fechas de inicio y finalización -->
             <div class="row">
+                <!--Sección año de inicio-->
                 <div class="col-md-3">
                     <p class="subtitlestn">Fecha de inicio: </p>
                     <div class="form-floating">
@@ -67,7 +70,7 @@
                     </div>
                 </div>
 
-                <!-- Selección de Era -->
+                <!-- Selección de Era inicio-->
 				<div class="col-md-2">
 					<p class="subtitlestn">a. C. / d. C. </p>
 					<div class="form-floating">
@@ -89,6 +92,7 @@
                     <p>-</p>
                 </div>
 
+                <!--Sección año de finalización-->
                 <div class="col-md-3">
                     <p class="subtitlestn">Fecha de finalización: </p>
                     <div class="form-floating">
@@ -97,6 +101,7 @@
                     </div>
                 </div>
 
+                <!-- Selección de Era final -->
                 <div class="col-md-2">
 					<p class="subtitlestn">a. C. / d. C. </p>
 					<div class="form-floating">
@@ -119,6 +124,7 @@
             <div class="row">
             </div><br><br>
 
+            <!-- Sección de la descripción de la corriente-->
             <div class="row">
                 <div class="col-md-6">
                     <h1 class="subtitlestn">Descripción:</h1>
@@ -133,7 +139,8 @@
                     </div><br>
                 </div>
             </div>
-
+            
+            <!-- Sección de la URL de la corriente-->
             <div class="row">
                 <div class="col-md-6">
                     <h1 class="subtitlestn">URL:</h1>
@@ -147,10 +154,13 @@
                         <label for="imagen">URL</label>
                     </div>
                 </div>
+
+                <!--Botón de guardar-->
                 <div class="col-md-2">
                     <button class="input-group-text botona rounded" type="submit" value="Save">Guardar</button>
                 </div>
 
+                <!--Botón de regreso a inicio-->
                 <div class="col-md-2">
                     <a class="input-group-text botona rounded" href="/" >Regresar a inicio</a>
                 </div>
