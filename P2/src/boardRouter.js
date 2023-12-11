@@ -14,15 +14,10 @@ router.post('/post/new', (req, res) => {
     const { title, date1, date2, edad1, edad2, descripcion, image, subelemento } = req.body;
 
     // Validar los campos del formulario
-    const requiredFields = {
-        'title': 'Nombre de la corriente',
-        'date1': 'Fecha de Inicio',
-        'edad1': 'Era de la fecha de inicio',
-        'date2': 'Fecha de Finalización',
-        'edad2': 'Era de la fecha de finalización',
-        'descripcion': 'Descripción',
-        'image': 'URL'
-    };
+    const requiredFields = { title, date1, date2, edad1, edad2, descripcion, image, subelemento  };
+
+    console.log("Tipo de edad1:", typeof edad1);
+
 
     const missingFields = Object.keys(requiredFields).filter(field => !req.body[field]);
 

@@ -68,17 +68,19 @@
                 </div>
 
                 <!-- Selección de Era -->
-                <div class="col-md-2">
-                    <p class="subtitlestn">a. C. / d. C. </p>
-                    <div class="form-floating">
-                        <select class="form-control" id="edad1" name="edad1">
-                            <option value="" disabled selected>Seleccione una era</option>
-                            <option value="a. C." {{edad1 === 'a. C.' ? 'selected' : '' }}>a. C.</option>
-                            <option value="d. C." {{edad1 === 'd. C.' ? 'selected' : '' }}>d. C.</option>
-                        </select>                                            
-                        <label for="edad1">Era</label>
-                    </div>
-                </div>
+				<div class="col-md-2">
+					<p class="subtitlestn">a. C. / d. C. </p>
+					<div class="form-floating">
+						<select class="form-control" id="edad1" name="edad1" required>
+							<!-- Opción no seleccionable con el valor de {{ post.edad1 }} -->
+                            <option value="{{edad1}}" selected>{{edad1}}</option>
+							<!-- Opciones regulares -->
+							<option value="a. C.">a. C.</option>
+							<option value="d. C.">d. C.</option>
+						</select>
+						<label for="edad1">Era</label>
+					</div>
+				</div>
 
                 <!-- Resto del formulario con el mismo enfoque -->
 
@@ -96,16 +98,19 @@
                 </div>
 
                 <div class="col-md-2">
-                    <p class="subtitlestn">a. C. / d. C. </p>
-                    <div class="form-floating">
-                        <select class="form-control" id="edad2" name="edad2">
-                            <option value="" disabled selected>Seleccione una era</option>
-                            <option value="a. C." {{ edad2 === 'a. C.' ? 'selected' : '' }}>a. C.</option>
-                            <option value="d. C." {{ edad2 === 'd. C.' ? 'selected' : '' }}>d. C.</option>
-                        </select>
-                        <label for="edad2">Era</label>
-                    </div>
-                </div>
+					<p class="subtitlestn">a. C. / d. C. </p>
+					<div class="form-floating">
+						<select class="form-control" id="edad2" name="edad2" required>
+							<!-- Opción no seleccionable con el valor de {{ post.edad1 }} -->
+                            <option value="{{edad2}}" selected>{{edad2}}</option>
+							<!-- Opciones regulares -->
+							<option value="a. C.">a. C.</option>
+							<option value="d. C.">d. C.</option>
+						</select>
+						<label for="edad1">Era</label>
+					</div>
+				</div>
+
             </div>
 
             <div class="col-md-1">
