@@ -14,12 +14,14 @@ router.post('/post/new', (req, res) => {
     const { title, date1, date2, edad1, edad2, descripcion, image, subelemento } = req.body;
 
     // Validar los campos del formulario
-    const requiredFields = { title, date1, date2, edad1, edad2, descripcion, image, subelemento  };
+    const requiredFields = { title, date1, date2, edad1, edad2, descripcion, image };
 
     console.log("Tipo de edad1:", typeof edad1);
 
 
     const missingFields = Object.keys(requiredFields).filter(field => !req.body[field]);
+    console.log("Campos faltantes:", missingFields);
+
 
     if (missingFields.length > 0) {
         // Si hay campos vacíos, asignar valores a cada variable que falte
@@ -40,7 +42,6 @@ router.post('/post/new', (req, res) => {
             edad2,
             descripcion,
             image,
-            subelemento,
             titleError,
             date1Error,
             date2Error,
